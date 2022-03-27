@@ -1,0 +1,511 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+li{
+    list-style: none;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+body{
+    position: relative;
+    /*	background: url("46ca0a979474bb697410d8cc4a748496.jpg");*/
+    /*	background-size: 100% 100%;*/
+    background: #36D5FF;
+    width: 100%;
+    height: 763px;
+}
+.member{
+    width: 50%;
+    height:26px;
+    text-align: center;
+    line-height: 25px;
+    outline: none;
+    border: none;
+    background: rgba(0,0,0,0);
+    color: darkolivegreen;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 3px;
+}
+.memberImg{
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    border:1px solid #fff;
+    margin-top: 2px;
+}
+/*玩家1*/
+.playerOne{
+    position: absolute;
+    top: 643px;
+    left: 43%;
+    width: 181px;
+}
+.playerOneData img{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin: 5px 10px 0px;
+
+}
+.healthPoint i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 15px;
+    background: url("../img/生命值.png");
+    background-size: 100% 100%;
+}
+.healthPoint input{
+    width: 30px;
+    height: 30px;
+    border:none;
+    text-align: center;
+    line-height: 30px;
+    outline: none;
+    background: rgba(0,0,0,0);
+    margin-right: 10px;
+    color: red;
+    font-size: 24px;
+}
+.playerOneData p{
+    color: deeppink;
+    text-align: center;
+}
+.playerOneLeftImg{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 60px;
+}
+.playerOneRightImg{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 60px;
+}
+
+/*玩家2*/
+.playerToo{
+    position: absolute;
+    top: 590px;
+    right: 0px;
+    width: 131px;
+    height: 170px;
+}
+.playerTooData p{
+    color: deeppink;
+    text-align: center;
+}
+.playerTooRight{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 71px;
+    margin-bottom: -20px;
+}
+
+/*玩家3*/
+.playerThree{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    width: 131px;
+    height: 170px;
+}
+.playerThreeData p{
+    color: deeppink;
+    text-align: center;
+}
+.playerThreeLeft{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.playerOneRight{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 70px;
+}
+/*玩家4*/
+.playerFour{
+    position: absolute;
+    top: 5px;
+    left: 43%;
+    width: 181px;
+}
+.playerFourLeft{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.playerFourRight{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+/*玩家5*/
+.playerFive{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 131px;
+    height: 170px;
+}
+.playerFiveRight{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+.playerFiveLeft{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+/*玩家6*/
+.playerSix{
+    position: absolute;
+    top: 590px;
+    left: 0px;
+    width: 131px;
+    height: 170px;
+}
+.playerSixRight{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+.playerSixLeft{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 60px;
+}
+/*中央战场*/
+.battleground{
+    width: 74%;
+    height: 61%;
+    position: absolute;
+    left: 13%;
+    top: 20%;
+    background:#ffffff;
+    border-radius: 8px;
+}
+.battlegroundPosision{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.memberOne{
+    position: absolute;
+    top:86%;
+    left: 47%;
+    width: 4%;
+    height: 12%;
+}
+.memberOne img{
+    width: 100%;
+    height: 100%;
+}
+.memberToo{
+    position: absolute;
+    top:65%;
+    left: 95%;
+    width: 4%;
+    height: 12%;
+}
+.memberToo img{
+    width: 100%;
+    height: 100%;
+}
+.memberThree{
+    position: absolute;
+    top:19%;
+    left: 95%;
+    width: 4%;
+    height: 12%;
+}
+.memberThree img{
+    width: 100%;
+    height: 100%;
+}
+.memberFour{
+    position: absolute;
+    top:3%;
+    left: 47%;
+    width: 4%;
+    height: 12%;
+}
+.memberFour img{
+    width: 100%;
+    height: 100%;
+}
+.memberFive{
+    position: absolute;
+    top:19%;
+    left: 1%;
+    width: 4%;
+    height: 12%;
+}
+.memberFive img{
+    width: 100%;
+    height: 100%;
+}
+.memberSix{
+    position: absolute;
+    top:65%;
+    left: 1%;
+    width: 4%;
+    height: 12%;
+}
+.memberSix img{
+    width: 100%;
+    height: 100%;
+}
+/*回合数*/
+.bout{
+    position: absolute;
+    top: 8%;
+    left: 22%;
+    height: 30px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 3px;
+}
+.bout p{
+    line-height: 30px;
+}
+.bout p input{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: rgba(0,0,0,0);
+    color: brown;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+}
+/*移动物体*/
+.objectMove{
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+}
+.clock{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+    background: url("../img/闹钟.png");
+    background-size: 100% 100%;
+}
+.clock input{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background: rgba(0,0,0,0);
+    border: none;
+    outline: none;
+    color: blue;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+}
+.messageArea{
+    position: absolute;
+    top:82%;
+    left: 10%;
+    width: 23%;
+    height: 130px;
+    background: rgba(0,0,0,0.5);
+    overflow-y: auto;
+    border-radius: 2px;
+}
+.sysMessage{
+    width: 100%;
+    line-height: 24px;
+}
+.sysMessage p{
+    color: chocolate;
+    font-size: 14px;
+}
+.sysMessage span{
+    color:oldlace;
+}
+.userMessage{
+    width: 100%;
+    line-height: 24px;
+}
+.userMessage p{
+    color:lime;
+    font-size: 14px;
+}
+.userMessage span{
+    color:oldlace;
+}
+.weaponL{
+    position: absolute;
+    top: 83%;
+    left: 37%;
+    width: 140px;
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+.weaponL img{
+    float: left;
+    width: 60px;
+    height: 40px;
+    margin: 4px;
+    cursor: pointer;
+    border:1px solid #fff;
+    border-radius: 2px;
+}
+.weaponR{
+    position: absolute;
+    top: 83%;
+    left: 52%;
+    width: 140px;
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+.weaponR img{
+    float: left;
+    width: 60px;
+    height: 40px;
+    margin: 4px;
+    cursor:pointer;
+    border:1px solid #fff;
+    border-radius: 2px;
+}
+.roomChatArea{
+    position: absolute;
+    top: 92%;
+    left: 65%;
+}
+.roomChatData{
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    background: rgba(0,0,0,0.7);
+    text-align: left;
+    position: relative;
+    border-radius: 3px;
+}
+.roomChatData i{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: url("../img/聊天.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+}
+.roomChatData input{
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    outline: none;
+    border: none;
+    background: rgba(0,0,0,0.7);
+    color: aqua;
+    font-size: 18px;
+}
+.roomChatData a{
+    cursor: pointer;
+    color: #01AAED;
+    font-size: 17px;
+}
+.hint{
+    position: absolute;
+    width: 200px;
+    height:50px;
+    top: 45%;
+    left: 48%;
+    font-size: 30px;
+    color: red;
+}
+.diePlayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 763px;
+    background: rgba(0,0,0,0.1);
+    text-align: center;
+}
+.closeGame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 763px;
+    background: rgba(0,0,0,0.1);
+    text-align: center;
+}
+.closeGame h1{
+    margin-top: 350px;
+    color: red;
+    font-size: 66px;
+}
+.closeGame button{
+    margin-top: 20px;
+    background: #00FFFF;
+    color: black;
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+.diePlayer h1{
+    margin-top: 400px;
+    color: red;
+    font-size: 66px;
+}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width:6px;
+    background: rgba(0,0,0,0);
+    border-radius: 3px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    border-radius:10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius:3px;
+    background: #C2BE9E;
+}

@@ -1,0 +1,709 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+li{
+    list-style: none;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+body{
+    width: 100%;
+    height: 760px;
+    background: url("../img/War.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.homeTop{
+    width: 100%;
+}
+.userDataFl{
+    width: 240px;
+    height: 70px;
+}
+.userDataFl img{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+.userName{
+    width: 130px;
+    height: 50px;
+    margin:9px 10px 5px 0;
+    color: white;
+}
+.systemNotice{
+    bottom: 10px;
+    left: 10px;
+    width: 700px;
+    height: 20px;
+    position: relative;
+    color: white;
+    border-radius: 3px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.8), rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0));
+}
+.systemNotice i{
+    background: url("../img/聊天.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    cursor: pointer;
+}
+.systemNotice marquee{
+    width: 94%;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
+.homeBody{
+    width: 100%;
+    margin-top: 40px;
+}
+/*-------------聊天框-----------*/
+.friend{
+    width: 1000px;
+    height: 762px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+.friendTop{
+    width: 940px;
+    height: 50px;
+    margin-left: 60px;
+    border-bottom: 2px solid white;
+}
+.friendTop li{
+    float: left;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.BodyFl{
+    width: 300px;
+    height: 710px;
+    border-right: 1px solid white;
+}
+.friendData{
+    width: 95%;
+    height: 80px;
+    margin: 3px;
+    position: relative;
+}
+.invite{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+.invite button{
+    width: 50px;
+    font-size: 16px;
+    height: 25px;
+    border: none;
+    outline: none;
+    color: #00FFFF;
+    background: black;
+    border-radius: 5px;
+}
+.friendData:hover{
+    border: 3px solid #eb7350;
+}
+.friendData img{
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+}
+.friendName span{
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+}
+.friendName{
+    width: 100px;
+    height: 70px;
+    margin: 5px;
+    text-align: center;
+}
+.friendName p{
+    color: green;
+}
+.friendName a{
+    display: block;
+    color:#009688;
+}
+.friendTop li:hover{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5), rgba(0,0,1,0.3),white);
+}
+.friendBody{
+    width: 940px;
+    margin-left: 60px;
+    height: 710px;
+}
+.BodyFr{
+    width: 639px;
+    height: 710px;
+}
+.ChatDiv{
+    width: 639px;
+    height: 610px;
+    overflow-y: auto;
+
+}
+.SendData{
+    width: 639px;
+    height: 100px;
+    border-top: 1px solid white;
+    background: black;
+}
+.inputData{
+    width: 500px;
+    height: 40px;
+    border-bottom: 1px solid white;
+    margin: 30px 10px 30px 10px;
+}
+.inputData i{
+    float: left;
+    background: url("../img/聊天.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.inputData input{
+    margin-left: 5px;
+    width: 455px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,0);
+    color: white;
+}
+.SendData button{
+    position: absolute;
+    top: 695px;
+    right: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: gold;
+    cursor: pointer;
+    border-right: 3px;
+}
+.game{
+    width: 320px;
+    height: 440px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    margin-right: 100px;
+    position: absolute;
+    top: 165px;
+    right: -40px;
+    border-radius: 5px;
+}
+.game p{
+    margin-top: 5px;
+    width:100%;
+    height: 30px;
+}
+.gameIl{
+    display: inline-block;
+    color: #00FFFF;
+    cursor: pointer;
+}
+.gameIr{
+    display: inline-block;
+    color: #FF5722;
+    cursor: pointer;
+}
+.game div{
+    width: 100%;
+    height: 126px;
+    margin: 5px 0;
+    border: 1px solid #eb7350;
+    border-radius: 3px;
+    line-height: 126px;
+    cursor: pointer;
+}
+.game div span{
+    display: inline-block;
+    color: gold;
+    font-size: 38px;
+    margin-left: 10px;
+    font-family: 仿宋;
+}
+.homeButton{
+    position: absolute;
+    top:96%;
+
+}
+.my{
+    width: 100%;
+    min-height: 75px;
+    position: relative;
+}
+.my p{
+    position: absolute;
+    top: 0px;
+    right: 10%;
+    font-size: 12px;
+    color: yellow;
+}
+.myImg{
+    margin: 5px;
+    width: 8%;
+    height: 50px;
+}
+.myImg img{
+    width: 100%;
+    height: 100%;
+}
+.myContent{
+    margin-top: 15px;
+    max-width: 50%;
+    padding: 10px 10px;
+    color: aliceblue;
+    border-radius: 5px;
+    background:#4E5465;
+}
+.you {
+    width: 100%;
+    min-height: 75px;
+    position: relative;
+}
+.you p {
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    font-size: 12px;
+    color:yellow;
+}
+.youImg {
+    margin: 5px;
+    width: 8%;
+    height: 50px;
+}
+.youImg img {
+    width: 100%;
+    height: 100%;
+}
+.youContent {
+    margin-top: 20px;
+    max-width: 50%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    background:#4E5465;
+}
+.pack{
+    display: inline-block;
+    position: absolute;
+    top: 300px;
+    right: -30px;
+    width: 30px;
+    height: 90px;
+    background: url("../img/收.png");
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.loginCount{
+    color: #FFFFFF;
+    position: absolute;
+    top: 680px;
+    left: 10px;
+}
+.loginCount input{
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 30px;
+    background: rgba(0,0,0,0);
+    color: green;
+}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width:6px;
+    background: rgba(0,0,0,0);
+    border-radius: 3px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    border-radius:10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius:3px;
+    background: #C2BE9E;
+}
+/*---------------------------------房间弹出层----------------------------------*/
+.roomPopups{
+    position: absolute;
+    background: url("../img/房间主页.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 762px;
+    z-index: 30;
+    top:0px;
+    left: 0px;
+}
+.roomTop{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 5px;
+}
+.roomTop li:first-child{
+    width: 120px;
+    height: 35px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    cursor: pointer;
+}
+.roomTop li:last-child{
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+.roomTop li p{
+    color: #C9C5C5;
+}
+.roomTop li i{
+    margin-top: 2px;
+    margin-right: 5px;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background: url("../img/返回.png");
+    background-size: 100% 100%;
+    /*float: left;*/
+}
+.roomTop li span{
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+    color: white;
+    font-size: 24px;
+}
+.roomBody{
+    width: 100%;
+    height: 695px;
+
+}
+.roomBodyFl{
+    width: 1095px;
+    height: 710px;
+    border-right:1px solid rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+}
+.roomBodyFr{
+    margin-left: 20px;
+    width: 400px;
+    height: 710px;
+    border-left: 1px solid #eb7350;
+}
+.Vs{
+    margin-top:345px;
+    width: 50px;
+    height: 50px;
+    color: red;
+    font-size: 25px;
+}
+.location{
+    width: 926px;
+    margin: 0 auto;
+}
+.roomMember{
+    float: left;
+    margin: 205px 7px 0 7px;
+    width: 130px;
+    height: 300px;
+    border: 1px solid red;
+    background: rgba(0,0,0,0.5);
+}
+.roomMember i{
+    float: left;
+    width: 28px;
+    height: 15px;
+    color: #FF00FF;
+    font-size: 14px;
+}
+.roomMember img{
+    width:90px;
+    height: 90px;
+    margin:20px;
+}
+.roomMember p{
+    margin-bottom: 20px;
+    color: white;
+}
+.prepare{
+    width: 100px;
+    height: 40px;
+    background: #eb7350;
+    border:none;
+    outline: none;
+    color: #000000;
+}
+.roomMemberBtn{
+    text-align: left;
+}
+.roomMemberBtn button{
+    margin-left: 15px;
+}
+.noPrepare{
+    width: 100px;
+    height: 40px;
+    background: green;
+    color: white;
+    border:none;
+    outline: none;
+}
+.functionArea{
+    margin-top: 20px;
+    width: 1100px;
+    height: 180px;
+}
+.chatArea{
+    border-top: 1px solid #eb7350;
+    width: 1095px;
+    height: 110px;
+    background: rgba(0,0,0,0.5);
+    overflow-y: auto;
+}
+.roomUserI{
+    width: 100%;
+    height: 20px;
+    text-align: left;
+
+}
+.roomUserI a{
+    color: #FFFF00;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.roomUserI b{
+    margin-left: 20px;
+    color: #eb7350;
+    font-size: 16px;
+}
+.roomUserI span{
+    color: white;
+    font-size: 16px;
+}
+.roomChatBut{
+    width: 1095px;
+    height: 60px;
+    margin-top: 10px;
+    border-top: 1px solid white;
+}
+.roomChatData{
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    background: rgba(0,0,0,0.7);
+    text-align: left;
+    position: relative;
+    border-radius: 3px;
+}
+.roomChatData i{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: url("../img/聊天.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+}
+.roomChatData input{
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    outline: none;
+    border: none;
+    background: rgba(0,0,0,0.7);
+    color: #FF00FF;
+    font-size: 18px;
+}
+.roomChatData a{
+    cursor: pointer;
+    color: #01AAED;
+    font-size: 17px;
+}
+.roomChatBut button{
+    width: 120px;
+    height: 40px;
+    background: #009688;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-right: 50px;
+    color: #01AAED;
+    cursor: pointer;
+}
+.roomFriendTile{
+    width: 400px;
+    height: 40px;
+    background: rgba(0,0,0,0.3);
+}
+.roomFriendTile li{
+    width: 198px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.roomFriend{
+    margin-top: 10px;
+    width: 400px;
+    height: 600px;
+    overflow-y: auto;
+    background: rgba(0,0,0,0.1);
+    padding-top:5px;
+}
+.roomFriendBtn{
+    margin-top: 5px;
+    width: 400px;
+    height: 55px;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    border-top: 1px solid #eb7350;
+}
+.roomFriendBtn i{
+    display: inline-block;
+    background: url("../img/招募.png");
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 17px;
+    left: 19px;
+}
+.roomFriendBtn button{
+    float: left;
+    margin-top: 12px;
+    padding-right: 5px;
+    text-align: right;
+    width: 85px;
+    height: 30px;
+    background: #C9C5C5;
+    color: yellow;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    margin-left: 15px;
+}
+.roomFriendBtn div{
+    cursor: pointer;
+    float: right;
+    margin-top: 11px;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/刷新.png");
+    background-size: 100% 100%;
+}
+.RecruitmentInformation{
+    position: absolute;
+    top: 600px;
+    left: 10px;
+}
+.friendInvite{
+    position: absolute;
+    top: 490px;
+    left: 10px;
+}
+.friendInviteContent button{
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background: #C9C5C5;
+    border-radius: 2px;
+    outline: none;
+    font-size: 18px;
+    color: blue;
+    border: none;
+}
+.friendInviteContent{
+    width: 305px;
+    height: 100px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.friendInviteContent img{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+.friendInviteText p{
+    margin-top: 5px;
+    color:#FF5722;
+    font-size: 18px;
+}
+.RecruitInformation{
+    width: 200px;
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.RecruitInformation img{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
+.RecruitText span{
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: blue;
+}
+.RecruitText p{
+    margin-top: 5px;
+    color:#FF5722;
+    font-size: 15px;
+}
+.RecruitButton button{
+    background: white;
+    margin: 5px;
+    width: 20px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #FF5722;
+    border-radius: 2px;
+}
